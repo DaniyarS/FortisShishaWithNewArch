@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fortis Shisha</string>
+    <string name="title_main_menu">Магазин</string>
+    <string name="order">Заказать</string>
+    <string name="more">Подробнее</string>
+    <string name="profile">Пользователь</string>
+    <string name="check_out">Корзина</string>
+</resources>
