@@ -18,7 +18,7 @@
         app:titleMarginStart="32dp"
         app:titleTextAppearance="@style/ToolbarTextAppearance"
         app:titleTextColor="@color/colorText"
-        app:logo="@drawable/ic_logo" />
+        app:logo="@drawable/app_icon" />
 
     <FrameLayout
         android:id="@+id/mainMenu"

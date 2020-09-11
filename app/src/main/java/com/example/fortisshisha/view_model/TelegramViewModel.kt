@@ -1,8 +1,8 @@
 package com.example.fortisshisha.view_model
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
+import android.content.Context
+import androidx.lifecycle.ViewModel
 
-class TelegramViewModel (application: Application) : AndroidViewModel(application) {
+class TelegramViewModel (private val context: Context) : ViewModel() {
 
 }

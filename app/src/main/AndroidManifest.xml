@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activities.HookahOrderActivity"></activity>
-        <activity android:name=".view.activities.EnterActivity" />
-        <activity android:name=".view.activities.MainActivity" />
-        <activity android:name=".view.activities.ApparatDetailsActivity" />
-        <activity android:name=".view.activities.SplashActivity">
+        <activity android:name=".view.activities.HookahOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activities.EnterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activities.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activities.ApparatDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.activities.SplashActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

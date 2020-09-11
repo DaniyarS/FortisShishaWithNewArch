@@ -1,8 +1,8 @@
 package com.example.fortisshisha.view_model
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
+import android.content.Context
+import androidx.lifecycle.ViewModel
 
-class ProfileViewModel (application: Application) : AndroidViewModel(application) {
+class ProfileViewModel (private val context: Context) : ViewModel() {
 
 }

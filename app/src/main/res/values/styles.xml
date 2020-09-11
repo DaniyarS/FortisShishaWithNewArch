@@ -19,7 +19,7 @@
     </style>
 
     <style name="ToolbarTextAppearance">
-        <item name="fontFamily">@font/ubuntu_b</item>
+        <item name="fontFamily">@font/uni_sans_heavy</item>
         <item name="android:textSize">18sp</item>
     </style>
 

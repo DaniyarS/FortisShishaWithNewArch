@@ -1,11 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragments.ProfileFragment"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    app:layoutDescription="@xml/fragment_profile_scene"
+    tools:context=".view.fragments.ProfileFragment">
+
+    <TextView
+        android:id="@+id/nameLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name_label"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toStartOf="@id/phoneNumberLabelTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneNumberLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/phone_number_label"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLabelTextView" />
+
+    <TextView
+        android:id="@+id/addressLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_label"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberLabelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberLabelTextView" />
+
+    <LinearLayout
+        android:id="@+id/motionTrigger"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/motion_trigger"
+            android:fontFamily="@font/ubuntu_b"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/trigger_layout_profile"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/orderContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/userNameTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/user_name_hint"
+            android:inputType="text"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorSecondaryText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+        <EditText
+            android:id="@+id/phoneNumberTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/phone_number_hint"
+            android:inputType="phone"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorSecondaryText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+            tools:ignore="UnusedAttribute" />
+
+        <EditText
+            android:id="@+id/streetNameTextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/colorAccent"
+            android:hint="@string/street_name_hint"
+            android:inputType="text"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorSecondaryText"
+            app:layout_constraintBottom_toTopOf="@+id/saveEditedInformationButton"
+            app:layout_constraintStart_toStartOf="@+id/phoneNumberTextView"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextView"
+            tools:ignore="UnusedAttribute" />
+
+        <EditText
+            android:id="@+id/apartmentNumberTextView"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:backgroundTint="@color/colorAccent"
+            android:hint="@string/apartment_number"
+            android:inputType="number"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorSecondaryText"
+            app:layout_constraintBottom_toBottomOf="@+id/streetNameTextView"
+            app:layout_constraintStart_toEndOf="@+id/streetNameTextView"
+            app:layout_constraintTop_toTopOf="@+id/streetNameTextView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UnusedAttribute" />
+
+        <EditText
+            android:id="@+id/houseNumberTextView"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/colorAccent"
+            android:hint="@string/house_number"
+            android:inputType="number"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorSecondaryText"
+            app:layout_constraintBottom_toBottomOf="@+id/apartmentNumberTextView"
+            app:layout_constraintEnd_toEndOf="@+id/phoneNumberTextView"
+            app:layout_constraintStart_toEndOf="@+id/apartmentNumberTextView"
+            app:layout_constraintTop_toTopOf="@+id/apartmentNumberTextView"
+            tools:ignore="UnusedAttribute" />
+
+        <Button
+            android:id="@+id/saveEditedInformationButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/enter_button"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/roboto_medium"
+            android:hapticFeedbackEnabled="false"
+            android:text="@string/save_button"
+            android:textColor="@color/colorText"
+            android:textColorHighlight="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/houseNumberTextView"
+            app:layout_constraintStart_toStartOf="@+id/streetNameTextView"
+            tools:ignore="UnusedAttribute" />
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

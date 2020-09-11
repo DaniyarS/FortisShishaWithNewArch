@@ -1,8 +1,8 @@
 package com.example.fortisshisha.view_model
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
+import android.content.Context
+import androidx.lifecycle.ViewModel
 
-class CheckOutViewModel (application: Application) : AndroidViewModel(application) {
+class CheckOutViewModel (private val context: Context) : ViewModel() {
 
 }

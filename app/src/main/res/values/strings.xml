@@ -5,4 +5,16 @@
     <string name="more">Подробнее</string>
     <string name="profile">Пользователь</string>
     <string name="check_out">Корзина</string>
+    <string name="trigger_layout_profile">Изменить</string>
+    <string name="phone_number_hint">Номер телефона</string>
+    <string name="user_name_hint">Имя</string>
+    <string name="agreement">Даю согласие на обработку данных и подтвеждаю что мне исполнилось 21 лет</string>
+    <string name="next_button">далее</string>
+    <string name="save_button">обновить</string>
+    <string name="street_name_hint">Улица</string>
+    <string name="apartment_number">Дом</string>
+    <string name="house_number">Кв</string>
+    <string name="user_name_label">Имя:</string>
+    <string name="phone_number_label">Номер телефона:</string>
+    <string name="address_label">Адрес:</string>
 </resources>

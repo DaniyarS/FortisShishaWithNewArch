@@ -14,14 +14,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorAccent"
-        android:hint="Имя"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/user_name_hint"
         android:inputType="text"
         android:textColor="@color/colorText"
         android:textColorHint="@color/colorSecondaryText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/phoneNumberTextView"
@@ -29,27 +32,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorAccent"
-        android:hint="Номер телефона"
-        android:inputType="text"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/phone_number_hint"
+        android:inputType="phone"
         android:textColor="@color/colorText"
         android:textColorHint="@color/colorSecondaryText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
-
-    <EditText
-        android:id="@+id/StreetNameTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorAccent"
-        android:hint="Улица, дом, квартира"
-        android:inputType="text"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorSecondaryText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+        tools:ignore="UnusedAttribute"
+        android:autofillHints="" />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/ageCheckBox"
@@ -57,12 +49,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:checked="false"
-        android:text="Даю согласие на обработку данных и подтвеждаю что мне исполнилось 21 лет"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/agreement"
         android:textColor="@color/colorText"
         app:buttonTint="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StreetNameTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextView"
+        tools:ignore="UnusedAttribute" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -72,21 +66,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/company_logo" />
+        app:srcCompat="@drawable/company_logo"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/btEnter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:alpha="0.5"
+        android:alpha="0.8"
         android:background="@drawable/enter_button"
         android:backgroundTint="@color/colorAccent"
         android:enabled="false"
+        android:fontFamily="@font/roboto_medium"
         android:hapticFeedbackEnabled="false"
-        android:text="далее"
+        android:text="@string/next_button"
         android:textColor="@color/colorText"
         android:textColorHighlight="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnusedAttribute" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
