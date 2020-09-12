@@ -8,8 +8,9 @@ import com.example.fortisshisha.models.MainMenuCategory
 import kotlinx.android.synthetic.main.main_menu_item.view.*
 
 class MainMenuListAdapter
-    (val categoryList: List<MainMenuCategory>,
-     val itemClickListener: RecyclerViewItemClick? = null)
+    (
+    var categoryList: List<MainMenuCategory>? = null,
+    val itemClickListener: RecyclerViewItemClick? = null)
     : RecyclerView.Adapter<MainMenuListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -17,10 +18,10 @@ class MainMenuListAdapter
         return ViewHolder(inflater, parent)
     }
 
-    override fun getItemCount(): Int = categoryList.size
+    override fun getItemCount(): Int = categoryList?.size ?: 0
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(categoryList[position])
+        categoryList?.get(position)?.let { holder.bind(it) }
     }
 
     inner class ViewHolder(inflater: LayoutInflater, parent: ViewGroup)
