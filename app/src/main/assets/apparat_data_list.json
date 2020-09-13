@@ -1,0 +1,74 @@
+{
+  "apparats": [
+    {
+      "name": "Amy Deluxe",
+      "description": "Очередная стильная новинка, от немецкого производителя кальянной продукции Amy Deluxe.",
+      "price": "35000",
+      "brandName": "AdeedZ2",
+      "height": "70cm",
+      "numberOfTube": "1",
+      "heightOfTube": "75cm",
+      "volumeFlask": "3л",
+      "materialFlask": "Стекло",
+      "materialBowl": "Глина",
+      "manufacturer": "Китай",
+      "imgURL": "https://fasil-asia.kz/library/images/item/hookahs/amydeluxe/3.png"
+    },
+    {
+      "name": "Bali ELOX 630CE",
+      "description": "Кальяны Kaya Elox от немецкого производителя относятся к изделиям премиум класса.",
+      "price": "45000",
+      "brandName": "AdeedZ2",
+      "height": "70cm",
+      "numberOfTube": "1",
+      "heightOfTube": "75cm",
+      "volumeFlask": "3л",
+      "materialFlask": "Стекло",
+      "materialBowl": "Глина",
+      "manufacturer": "Китай",
+      "imgURL": "https://fasil-asia.kz/library/images/item/hookahs/kaya/3.png"
+    },
+    {
+      "name": "Amy",
+      "description": "Очередная стильная новинка",
+      "price": "35000",
+      "brandName": "AdeedZ2",
+      "height": "70cm",
+      "numberOfTube": "1",
+      "heightOfTube": "75cm",
+      "volumeFlask": "3л",
+      "materialFlask": "Стекло",
+      "materialBowl": "Глина",
+      "manufacturer": "Китай",
+      "imgURL": "https://fasil-asia.kz/library/images/item/hookahs/4.png"
+    },
+    {
+      "name": "Deluxe",
+      "description": "От немецкого производителя кальянной продукции Amy Deluxe.",
+      "price": "15000",
+      "brandName": "AdeedZ2",
+      "height": "70cm",
+      "numberOfTube": "1",
+      "heightOfTube": "75cm",
+      "volumeFlask": "3л",
+      "materialFlask": "Стекло",
+      "materialBowl": "Глина",
+      "manufacturer": "Китай",
+      "imgURL": "https://fasil-asia.kz/library/images/item/hookahs/kaya/8.png"
+    },
+    {
+      "name": "Amy Deluxe",
+      "description": "Очередная стильная новинка, от немецкого производителя кальянной продукции Amy Deluxe.",
+      "price": "10000",
+      "brandName": "AdeedZ2",
+      "height": "70cm",
+      "numberOfTube": "1",
+      "heightOfTube": "75cm",
+      "volumeFlask": "3л",
+      "materialFlask": "Стекло",
+      "materialBowl": "Глина",
+      "manufacturer": "Китай",
+      "imgURL": "https://fasil-asia.kz/library/images/item/hookahs/amydeluxe/2.png"
+    }
+  ]
+}

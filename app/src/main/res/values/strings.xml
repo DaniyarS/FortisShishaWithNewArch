@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Fortis Shisha</string>
     <string name="title_main_menu">Магазин</string>
+    <string name="title_hookah_list">Кальяны</string>
+    <string name="title_tobacco_list">Табаки</string>
+    <string name="title_coal_list">Угли</string>
+    <string name="title_hookah_order">Кальян с забивкой</string>
     <string name="order">Заказать</string>
-    <string name="more">Подробнее</string>
+    <string name="more">больше</string>
     <string name="profile">Пользователь</string>
     <string name="check_out">Корзина</string>
     <string name="trigger_layout_profile">Изменить</string>

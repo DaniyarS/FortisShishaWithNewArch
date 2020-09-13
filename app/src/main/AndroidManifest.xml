@@ -9,20 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activities.CoalListActivity"></activity>
-        <activity android:name=".view.activities.HookahListActivity" />
-        <activity android:name=".view.activities.ApparatListActivity" />
+        <activity android:name=".view.activities.TobaccoListActivity"
+            android:parentActivityName=".view.activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".view.activities.CoalListActivity"
+            android:parentActivityName=".view.activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".view.activities.ApparatListActivity"
+            android:parentActivityName=".view.activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".view.activities.HookahOrderActivity"
+            android:parentActivityName=".view.activities.MainActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".view.activities.EnterActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".view.activities.MainActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".view.activities.ApparatDetailsActivity"
+            android:parentActivityName=".view.activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".view.activities.SplashActivity"

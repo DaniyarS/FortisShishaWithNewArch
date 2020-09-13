@@ -36,8 +36,4 @@ class MainMenuListAdapter
             }
         }
     }
-
-    interface RecyclerViewItemClick {
-        fun itemClick(position: Int, item: MainMenuCategory?)
-    }
 }

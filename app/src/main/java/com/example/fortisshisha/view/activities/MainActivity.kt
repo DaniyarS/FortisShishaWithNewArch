@@ -1,9 +1,12 @@
 package com.example.fortisshisha.view.activities
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.core.graphics.toColor
+import androidx.core.graphics.toColorLong
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.fortisshisha.R
@@ -29,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId) {
             R.id.profileButton -> {
                 setFragment(ProfileFragment())
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+//
+//                }
             }
             R.id.checkOutButton -> {
                 setFragment(CheckOutFragment())

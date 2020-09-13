@@ -11,11 +11,12 @@ import com.example.fortisshisha.R
 import com.example.fortisshisha.models.MainMenuCategory
 import com.example.fortisshisha.view.activities.*
 import com.example.fortisshisha.view.adapters.MainMenuListAdapter
+import com.example.fortisshisha.view.adapters.RecyclerViewItemClick
 import com.example.fortisshisha.view_model.MainMenuViewModel
 import com.example.fortisshisha.view_model.ViewModelProviderFactory
 import kotlinx.android.synthetic.main.fragment_main_menu.*
 
-class MainMenuFragment : Fragment(R.layout.fragment_main_menu), MainMenuListAdapter.RecyclerViewItemClick {
+class MainMenuFragment : Fragment(R.layout.fragment_main_menu), RecyclerViewItemClick {
     private lateinit var viewModelFactory: ViewModelProviderFactory
     private lateinit var mainMenuViewModel: MainMenuViewModel
     private lateinit var mainMenuListAdapter: MainMenuListAdapter
@@ -35,15 +36,18 @@ class MainMenuFragment : Fragment(R.layout.fragment_main_menu), MainMenuListAdap
         mainMenuListAdapter.notifyDataSetChanged()
     }
 
-    override fun itemClick(position: Int, item: MainMenuCategory?) {
+    override fun itemClick(position: Int, item: Any?) {
         val intent: Intent
-        when(item?.categoryId) {
+
+        val mainMenu = item as MainMenuCategory
+
+        when(mainMenu.categoryId) {
             1 -> {
                 intent = Intent(this.activity, ApparatListActivity::class.java)
                 startActivity(intent)
             }
             2 -> {
-                intent = Intent(this.activity, HookahListActivity::class.java)
+                intent = Intent(this.activity, TobaccoListActivity::class.java)
                 startActivity(intent)
             }
             3 -> {
