@@ -7,10 +7,9 @@
         android:orderInCategory="100"
         android:title="@string/profile"
         android:icon="@drawable/ic_person"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
     <item android:id="@+id/checkOutButton"
         android:orderInCategory="200"
         android:title="@string/check_out"
-        android:icon="@drawable/ic_basket"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"/>
 </menu>

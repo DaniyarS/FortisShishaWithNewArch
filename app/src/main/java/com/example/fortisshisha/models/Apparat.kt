@@ -16,5 +16,14 @@ data class Apparat(
     var materialFlask: String? = null,
     var materialBowl: String? = null,
     var manufacturer: String? = null,
-    var imgURL: String? = null
-) : Parcelable
+    var imgURL: String? = null,
+    var addedToCart: Boolean = false
+) : Parcelable {
+    fun isAddedToCart() : Boolean {
+        return addedToCart
+    }
+
+    fun addToCart(isAdded: Boolean) {
+        this.addedToCart = isAdded
+    }
+}

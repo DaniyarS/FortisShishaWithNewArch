@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fortisshisha.R
@@ -45,6 +46,7 @@ class MainMenuFragment : Fragment(R.layout.fragment_main_menu), RecyclerViewItem
             1 -> {
                 intent = Intent(this.activity, ApparatListActivity::class.java)
                 startActivity(intent)
+                //setFragment(ApparatListFragment())
             }
             2 -> {
                 intent = Intent(this.activity, TobaccoListActivity::class.java)
@@ -59,5 +61,11 @@ class MainMenuFragment : Fragment(R.layout.fragment_main_menu), RecyclerViewItem
                 startActivity(intent)
             }
         }
+    }
+
+    private fun setFragment(fragment: Fragment) {
+        val fragmentTransaction: FragmentTransaction = fragmentManager?.beginTransaction()!!
+        fragmentTransaction.replace(R.id.mainMenu, fragment)
+        fragmentTransaction.commit()
     }
 }
